@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Oliver & Noah Store</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Welcome to Oliver & Noah Store</h1>
+    <p>Your one-stop shop for playful goodies</p>
+  </header>
+
+  <main class="products">
+    <div class="product-card">
+      <img src="{{ url_for('static', filename='images/monke-plush.jpg') }}" alt="Monke Plush">
+      <h2>Monke Plush</h2>
+      <p class="price">£9.99</p>
+      <button onclick="addToCart('Monke Plush')">Add to cart</button>
+    </div>
+    <div class="product-card">
+      <img src="{{ url_for('static', filename='images/vr-skins.jpg') }}" alt="VR Skins Pack">
+      <h2>VR Skins Pack</h2>
+      <p class="price">£4.99</p>
+      <button onclick="addToCart('VR Skins Pack')">Add to cart</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Oliver & Noah</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
